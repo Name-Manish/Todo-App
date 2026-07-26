@@ -1,0 +1,163 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f4f7fb;
+}
+
+.task-page{
+    max-width:1100px;
+    margin:auto;
+    padding:30px 20px;
+}
+
+.task-header{
+    margin-bottom:30px;
+}
+
+.task-header h1{
+    margin-bottom:20px;
+    color:#222;
+}
+
+.top-bar{
+    display:flex;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+.top-bar input,
+.top-bar select{
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    outline:none;
+    font-size:15px;
+}
+
+.top-bar input{
+    flex:1;
+}
+
+.task-list{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:20px;
+}
+
+.task-card{
+    background:#fff;
+    padding:20px;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+.task-card:hover{
+    transform:translateY(-5px);
+}
+
+.task-top{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:15px;
+    gap:10px;
+}
+
+.task-top h2{
+    font-size:20px;
+}
+
+.priority{
+    color:#fff;
+    padding:5px 12px;
+    border-radius:20px;
+    font-size:13px;
+}
+
+.high{
+    background:#e74c3c;
+}
+
+.medium{
+    background:#f39c12;
+}
+
+.low{
+    background:#27ae60;
+}
+
+.task-card p{
+    color:#666;
+    margin-bottom:20px;
+}
+
+.task-info{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:20px;
+    color:#555;
+    font-size:14px;
+}
+
+.task-buttons{
+    display:flex;
+    gap:10px;
+}
+
+.task-buttons button{
+    flex:1;
+    border:none;
+    padding:10px;
+    border-radius:8px;
+    color:#fff;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.complete{
+    background:#16a34a;
+}
+
+.edit{
+    background:#2563eb;
+}
+
+.delete{
+    background:#dc2626;
+}
+
+.complete:hover{
+    background:#15803d;
+}
+
+.edit:hover{
+    background:#1d4ed8;
+}
+
+.delete:hover{
+    background:#b91c1c;
+}
+
+@media(max-width:500px){
+
+.task-buttons{
+    flex-direction:column;
+}
+
+.task-info{
+    flex-direction:column;
+    gap:8px;
+}
+
+.task-top{
+    flex-direction:column;
+    align-items:flex-start;
+}
+
+}
