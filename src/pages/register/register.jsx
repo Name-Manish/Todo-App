@@ -27,7 +27,7 @@ function Register() {
 
     try {
       const response = await fetch(
-        "http://localhost:3000/api/users/register",
+        "https://todo-app-server-52ha.onrender.com/api/users/register",
         {
           method: "POST",
           headers: {

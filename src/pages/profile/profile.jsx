@@ -28,7 +28,7 @@ const Profile = () => {
         // Profile API
 
         const profileRes = await fetch(
-          "http://localhost:3000/api/users/profile",
+          "https://todo-app-server-52ha.onrender.com/api/users/profile",
           {
             method:"GET",
             credentials:"include",
@@ -61,7 +61,7 @@ const Profile = () => {
         // Todo API
 
         const taskRes = await fetch(
-          "http://localhost:3000/api/todos",
+          "https://todo-app-server-52ha.onrender.com/api/todos",
           {
             method:"GET",
             credentials:"include",
@@ -123,7 +123,7 @@ const Profile = () => {
 
       const res = await fetch(
 
-        "http://localhost:3000/api/users/logout",
+        "https://todo-app-server-52ha.onrender.com/api/users/logout",
 
         {
           method:"POST",
