@@ -28,7 +28,7 @@ function Task() {
     try {
 
       const response = await fetch(
-        "http://localhost:3000/api/todos",
+        "https://todo-app-server-52ha.onrender.com/api/todos",
         {
           method:"GET",
           credentials:"include",
@@ -72,7 +72,7 @@ function Task() {
     try{
 
       const response = await fetch(
-        `http://localhost:3000/api/todos/toggle/${id}`,
+        `https://todo-app-server-52ha.onrender.com/api/todos/toggle/${id}`,
         {
           method:"PATCH",
           credentials:"include",
@@ -108,7 +108,7 @@ function Task() {
 
 
       const response = await fetch(
-        `http://localhost:3000/api/todos/${id}`,
+        `https://todo-app-server-52ha.onrender.com/api/todos/${id}`,
         {
           method:"DELETE",
           credentials:"include",
@@ -181,7 +181,7 @@ function Task() {
 
       const response = await fetch(
 
-        `http://localhost:3000/api/todos/${editTask.id}`,
+        `https://todo-app-server-52ha.onrender.com/api/todos/${editTask.id}`,
 
         {
 
