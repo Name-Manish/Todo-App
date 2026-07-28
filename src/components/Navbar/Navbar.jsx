@@ -12,7 +12,7 @@ const Navbar = () => {
     const checkUser = async () => {
       try {
         const res = await fetch(
-          "http://localhost:3000/api/users/profile",
+          "https://todo-app-gma4.onrender.com/api/users/profile",
           {
             method: "GET",
             credentials: "include",
