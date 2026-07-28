@@ -6,6 +6,7 @@ import Task from "./pages/task/task";
 import Create from "./pages/create/create";
 import Login from "./pages/login/login";
 import Register from "./pages/register/register"
+import Profile from './pages/profile/profile';
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
           <Route path="/create" element={<Create />}/>
           <Route path="/login" element={<Login />}/>
           <Route path="/register" element={<Register />}/>
+          <Route path="/profile" element={<Profile />}/>
         </Routes>
 
     </>
